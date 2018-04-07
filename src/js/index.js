@@ -24,10 +24,10 @@ var ctx = document.getElementById('myChart').getContext('2d');
 var myChart = new Chart(ctx, {
   type: 'bar',
   data: {
-    labels: ['AWS', 'GCP', 'Python', 'Ruby', 'Node.js', 'html/css','ShellScript'],
+    labels: ['AWS', 'GCP', 'Python', 'Ruby', 'Node.js', 'Java', 'html/css','ShellScript'],
     datasets: [{
       label: 'Level',
-      data: [7, 3, 3, 3, 3, 3, 4],
+      data: [7, 3, 3, 3, 3, 5, 3, 4],
       backgroundColor: "rgba(107,142,35,1)"
     }]
   },
