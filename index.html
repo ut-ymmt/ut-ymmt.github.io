@@ -1,10 +1,97 @@
 <!doctype html>
 <html>
-  <head>
-    <title>ut-ymmt profile page</title>
-  </head>
-  <h1>Hello,World!</h1>
-  <body>
-    <script src="main.js"></script>
-  </body>
+
+<head>
+  <title>ut-ymmt profile page</title>
+  <link rel="stylesheet" href="dist/scss/pc/style.scss.css">
+  <link rel="stylesheet" href="dist/scss/pc/header.scss.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+
+<body>
+  <header>
+    <nav class="isFixed">
+      <ul class="globalNav">
+        <li>
+          <a href="#about">
+            <strong>About</strong>
+          </a>
+        </li>
+        <li>
+          <a href="#skill">
+            <strong>Skill</strong>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/ut-ymmt">
+            <strong>GitHub</strong>
+          </a>
+        </li>
+
+      </ul>
+    </nav>
+  </header>
+  <div class="contents">
+    <section>
+      <h1><a name="about">About</a></h1>
+
+      <div class="profileBlock">
+        <div class="profileLeftBox">
+          <div class="textCenter">
+            <h2>ut-ymmt</h2>
+          </div>
+          <p>
+            東京でクラウドエンジニアしてます。
+            <br> AWS・GCPを利用したインフラ構築・運用。
+            <img src="img/profile.png">
+          </p>
+        </div>
+        <div class="profileRightBox">
+          <p>
+            <img src="img/gohan.png" width="260" height="260">
+            <br> 趣味は料理とアニメ鑑賞です。
+          </p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h1><a name="skill">Skill</a></h1>
+      <canvas id="myChart"></canvas>
+      <h2>Tool</h2>
+      <ul>
+        <li>
+          <h3>
+          AWS
+          </h3>
+          EC2,RDS,ELB,S3,CloudFront,ApiGateway,Lambda,IAM,Route53,ElastCache,EB...etc
+        </li>
+        <li>
+          <h3>
+          Infrastructure as Code
+          </h3>
+          CloudFormation,Terraform
+        </li>
+        <li>
+          <h3>
+          CI/CD
+          </h3>
+          CodeDeploy,TravisCI
+        </li>
+
+
+        <li>
+          <h3>
+            Logging/Monitoring
+          </h3>
+          CloudWatch,NewRelic,Zabbix
+        </li>
+
+      </ul>
+    </section>
+  </div>
+  <footer>
+    <script src="dist/js/bundle.js"></script>
+  </footer>
+</body>
+
 </html>

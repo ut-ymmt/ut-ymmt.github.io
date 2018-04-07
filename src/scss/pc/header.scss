@@ -1,0 +1,36 @@
+$primary-color: #add8e6;
+$secondry-color:#f5f5dc;
+$thirdry-color: #b0e0e6;
+
+$radius: 5px;
+header {
+    .globalNav {
+        list-style: none;
+        overflow: hidden;
+        margin: auto;
+        width: 800px;
+        background: $primary-color;
+        li {
+            float: left;
+            border-right: 1px solid $secondry-color;
+
+            a {
+                display: block;
+                padding: 10px 50px;
+                text-align: center;
+                text-decoration: none;
+                border-radius: $radius;
+                &:hover {
+                    background: $thirdry-color;
+                }
+            }
+        }
+    }
+}
+
+.isFixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;}

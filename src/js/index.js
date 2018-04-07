@@ -1,12 +1,47 @@
-import _ from 'lodash';
+let Chart = require('chart.js');
 
-function component() {
-  var element = document.createElement('div');
+$(function() {
+  var $win = $(window),
+      $main = $('main'),
+      $nav = $('nav'),
+      navHeight = $nav.outerHeight(),
+      navPos = $nav.offset().top,
+      fixedClass = 'is-fixed';
 
-  // Lodash, now imported by this script
-  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+  $win.on('load scroll', function() {
+    var value = $(this).scrollTop();
+    if ( value > navPos ) {
+      $nav.addClass(fixedClass);
+      $main.css('margin-top', navHeight);
+    } else {
+      $nav.removeClass(fixedClass);
+      $main.css('margin-top', '0');
+    }
+  });
+});
 
-  return element;
-}
-
-document.body.appendChild(component());
+var ctx = document.getElementById('myChart').getContext('2d');
+var myChart = new Chart(ctx, {
+  type: 'bar',
+  data: {
+    labels: ['AWS', 'GCP', 'Python', 'Ruby', 'Node.js', 'html/css','ShellScript'],
+    datasets: [{
+      label: 'Level',
+      data: [7, 3, 3, 3, 3, 3, 4],
+      backgroundColor: "rgba(107,142,35,1)"
+    }]
+  },
+  options: {
+    scales: {
+      yAxes: [
+        {
+          ticks: {
+            beginAtZero: true,
+            min: 0,
+            max: 10
+          }
+        }
+      ]
+    }
+  }
+});
