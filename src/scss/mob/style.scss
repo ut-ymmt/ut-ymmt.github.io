@@ -1,28 +1,23 @@
-$font-stack : Helvetica,
+$font-stack: Helvetica,
 sans-serif;
 $primary-color: #add8e6;
 $secondry-color:#f5f5dc;
 $thirdy-color: #e0ffff;
-$radius: 0px;
 $font-color: #333;
 @media screen and (max-width: 750px) {
     body {
         font: 100% $font-stack;
         background: $primary-color;
-        margin-top: 117px;
         color: $font-color;
         width: 100%;
     }
-
     .contents {
         background: $secondry-color;
-        border-radius: $radius;
-        padding: 10px;
+        padding: 50px 10px 0 0px;
         width: 100%;
-    section {
-        margin: auto;
-    }
-
+        section {
+            margin: auto;
+        }
     }
     h1 {
         text-decoration: underline;
@@ -52,8 +47,7 @@ $font-color: #333;
         }
     }
     .profileRightBox {
-        @include profileBox(30px, 0px);
-
+        @include profileBox(20px, 0px);
     }
     .profileLeftBox {
         @include profileBox(0px, 0px);
@@ -65,8 +59,6 @@ $font-color: #333;
     .textCenter {
         text-align: center;
     }
-
     .wordBreakBox {
         word-wrap: break-word;
-    }
-}
+    }}

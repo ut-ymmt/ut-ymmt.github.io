@@ -1,37 +1,47 @@
 $primary-color: #add8e6;
-$secondry-color:#f5f5dc;
+$secondry-color:#9e9e9b;
 $thirdry-color: #b0e0e6;
-
-$radius: 5px;
-
+$forthry-color: #dcdcdc;
 @media screen and (min-width: 751px) {
     header {
-        .globalNav {
-            list-style: none;
-            overflow: hidden;
-            margin: auto;
-            width: 800px;
-            background: $primary-color;
+        margin: auto;
+        width: 740px;
+        .menu {
+            position: fixed;
+            p {
+                text-align: center;
+            }
+            label {
+                display: none;
+            }
+            ul {
+                width: 740px;
+                -webkit-transition: all 0.5s;
+                -moz-transition: all 0.5s;
+                -ms-transition: all 0.5s;
+                -o-transition: all 0.5s;
+                transition: all 0.5s;
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                overflow: hidden;
+                background: $primary-color;
+            }
             li {
+                padding: 5px;
+                border-right: 2px solid $forthry-color;
+                width: 150px;
                 float: left;
-                border-right: 1px solid $secondry-color;
-                a {
-                    display: block;
-                    padding: 10px 50px;
-                    text-align: center;
-                    text-decoration: none;
-                    border-radius: $radius;
-                    &:hover {
-                        background: $thirdry-color;
-                    }
+                p {
+                    margin: auto;
+                    padding: auto;
+                }
+                &:hover {
+                    background: $thirdry-color;
                 }
             }
         }
-    }
-    .isFixed {
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 2;
-        width: 100%;
+        input[type="checkbox"].on-off {
+            display: none;
+        }
     }}

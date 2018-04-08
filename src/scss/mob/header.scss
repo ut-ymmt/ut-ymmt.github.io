@@ -1,37 +1,57 @@
 $primary-color: #add8e6;
 $secondry-color:#f5f5dc;
 $thirdry-color: #b0e0e6;
-
+$forthry-color: #dcdcdc;
 $radius: 5px;
-
 @media screen and (max-width: 750px) {
     header {
-        .globalNav {
-            list-style: none;
-            margin: auto;
-            background: $primary-color;
-            margin-left: -40px;
-            width: 100%;
+        .menu {
+            width: 105%;
+            margin-top: -8px;
+            position: fixed;
+            p {
+                text-align: center;
+            }
+            label {
+                background: $primary-color;
+                display: block;
+                border: 1px solid $secondry-color;
+                height: 50px;
+            }
+            ul {
+                -webkit-transition: all 0.5s;
+                -moz-transition: all 0.5s;
+                -ms-transition: all 0.5s;
+                -o-transition: all 0.5s;
+                transition: all 0.5s;
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                width: 100%;
+            }
             li {
+                padding: 5px;
+                background: $thirdry-color;
                 border-bottom: 1px solid $secondry-color;
-                a {
-                    display: block;
-                    padding: 10px 50px;
-                    text-align: center;
-                    text-decoration: none;
-                    border-radius: $radius;
-                    &:hover {
-                        background: $thirdry-color;
-                    }
+                border-right: 1px solid $secondry-color;
+                border-left: 1px solid $secondry-color;
+                height: 20px;
+                p {
+                    margin: auto;
+                    padding: auto;
+                }
+                &:hover {
+                    background: $forthry-color;
                 }
             }
         }
-    }
-    .isFixed {
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 2;
-        width: 100%;
-    }
-}
+        input[type="checkbox"].on-off {
+            display: none;
+        }
+        input[type="checkbox"].on-off+ul {
+            height: 0;
+            overflow: hidden;
+        }
+        input[type="checkbox"].on-off:checked+ul {
+            height: 100px;
+        }    }}

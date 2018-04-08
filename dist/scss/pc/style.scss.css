@@ -2,8 +2,8 @@
   body {
     font: 100% Helvetica, sans-serif;
     background: #add8e6;
-    margin-top: 50px;
-    color: #333; }
+    color: #333;
+    margin: auto; }
   .contents {
     background: #f5f5dc;
     border-radius: 15px;

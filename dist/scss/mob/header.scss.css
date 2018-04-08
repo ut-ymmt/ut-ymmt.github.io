@@ -1,23 +1,41 @@
 @media screen and (max-width: 750px) {
-  header .globalNav {
-    list-style: none;
-    margin: auto;
-    background: #add8e6;
-    margin-left: -40px;
-    width: 100%; }
-    header .globalNav li {
-      border-bottom: 1px solid #f5f5dc; }
-      header .globalNav li a {
-        display: block;
-        padding: 10px 50px;
-        text-align: center;
-        text-decoration: none;
-        border-radius: 5px; }
-        header .globalNav li a:hover {
-          background: #b0e0e6; }
-  .isFixed {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    width: 100%; } }
+  header .menu {
+    width: 105%;
+    margin-top: -8px;
+    position: fixed; }
+    header .menu p {
+      text-align: center; }
+    header .menu label {
+      background: #add8e6;
+      display: block;
+      border: 1px solid #f5f5dc;
+      height: 50px; }
+    header .menu ul {
+      -webkit-transition: all 0.5s;
+      -moz-transition: all 0.5s;
+      -ms-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      width: 100%; }
+    header .menu li {
+      padding: 5px;
+      background: #b0e0e6;
+      border-bottom: 1px solid #f5f5dc;
+      border-right: 1px solid #f5f5dc;
+      border-left: 1px solid #f5f5dc;
+      height: 20px; }
+      header .menu li p {
+        margin: auto;
+        padding: auto; }
+      header .menu li:hover {
+        background: #dcdcdc; }
+  header input[type="checkbox"].on-off {
+    display: none; }
+  header input[type="checkbox"].on-off + ul {
+    height: 0;
+    overflow: hidden; }
+  header input[type="checkbox"].on-off:checked + ul {
+    height: 100px; } }
