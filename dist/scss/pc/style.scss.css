@@ -1,4 +1,4 @@
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 751px) {
   body {
     font: 100% Helvetica, sans-serif;
     background: #add8e6;
@@ -9,7 +9,7 @@
     border-radius: 15px;
     margin: auto;
     padding: 20px 20px;
-    width: 760px; }
+    width: 700px; }
   h1 {
     text-decoration: underline; }
   .floatList {
@@ -19,19 +19,19 @@
     .floatList li {
       float: left; }
   .profileBlock {
-    width: 760px; }
+    width: 700px; }
   .profileRightBox {
     display: inline-block;
-    width: 375px; }
+    width: 345px; }
     .profileRightBox p {
       text-align: center; }
     .profileRightBox img {
-      margin: 0px 55px 60px 55px;
+      margin: 0px 55px 30px 55px;
       width: 260px;
       height: 260px; }
   .profileLeftBox {
     display: inline-block;
-    width: 375px; }
+    width: 345px; }
     .profileLeftBox p {
       text-align: center; }
     .profileLeftBox img {
