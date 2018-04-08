@@ -4,17 +4,16 @@ $thirdry-color: #b0e0e6;
 
 $radius: 5px;
 
-@media screen and (min-width: 800px) {
+@media screen and (max-width: 800px) {
     header {
         .globalNav {
             list-style: none;
-            overflow: hidden;
             margin: auto;
-            width: 800px;
             background: $primary-color;
+            margin-left: -40px;
+            width: 100%;
             li {
-                float: left;
-                border-right: 1px solid $secondry-color;
+                border-bottom: 1px solid $secondry-color;
                 a {
                     display: block;
                     padding: 10px 50px;
@@ -34,4 +33,5 @@ $radius: 5px;
         left: 0;
         z-index: 2;
         width: 100%;
-    }}
+    }
+}

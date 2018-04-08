@@ -3,21 +3,27 @@ sans-serif;
 $primary-color: #add8e6;
 $secondry-color:#f5f5dc;
 $thirdy-color: #e0ffff;
-$radius: 15px;
+$radius: 0px;
 $font-color: #333;
-@media screen and (min-width: 800px) {
+@media screen and (max-width: 800px) {
     body {
         font: 100% $font-stack;
         background: $primary-color;
-        margin-top: 50px;
+        margin-top: 117px;
         color: $font-color;
+        width: 100%;
     }
+
     .contents {
         background: $secondry-color;
         border-radius: $radius;
+        margin-left: -10px;
+        padding: 10px;
+        width: 100%;
+    section {
         margin: auto;
-        padding: 20px 20px;
-        width: 760px;
+    }
+
     }
     h1 {
         text-decoration: underline;
@@ -31,29 +37,37 @@ $font-color: #333;
         }
     }
     .profileBlock {
-        width: 760px;
+        width: 100%;
     }
     @mixin profileBox($top, $bottom) {
-        display: inline-block;
-        width: 375px;
+        display: block;
+        margin: auto;
         p {
             text-align: center;
         }
         img {
-            margin: $top 55px $bottom 55px;
+            display: block;
+            margin: $top auto $bottom auto;
             width: 260px;
             height: 260px;
         }
     }
     .profileRightBox {
-        @include profileBox(0px, 60px);
+        @include profileBox(0px, 0px);
+
     }
     .profileLeftBox {
-        @include profileBox(30px, 0px);
+        @include profileBox(0px, 0px);
     }
     p {
         font-weight: bold;
+        word-wrap: break-word;
     }
     .textCenter {
         text-align: center;
-    }}
+    }
+
+    .wordBreakBox {
+        word-wrap: break-word;
+    }
+}
