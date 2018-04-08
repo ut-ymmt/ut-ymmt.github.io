@@ -3,10 +3,11 @@
     font: 100% Helvetica, sans-serif;
     background: #add8e6;
     color: #333;
-    width: 100%; }
+    width: 100%;
+    margin-left: -5px; }
   .contents {
     background: #f5f5dc;
-    padding: 50px 10px 0 0px;
+    padding: 50px 10px 20px;
     width: 100%; }
     .contents section {
       margin: auto; }
